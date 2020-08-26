@@ -115,14 +115,14 @@ MODAL AGREGAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Nombre Cliente</label>
-                <input type="text" class="form-control input-lg" id="nombre_cliente" name="nombre_cliente" onkeyup="this.value=this.value.toUpperCase();" placeholder="Ingresar nombre del cliente..." required>
+                <input type="text" class="form-control input-lg" id="nombre_cliente" name="nombre_cliente" onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" placeholder="Ingresar nombre del cliente..." required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Nro Contacto</label>
-                <input type="number" class="form-control input-lg" id="nro_contacto" name="nro_contacto" placeholder="Ingresar numero contacto...">
+                <input type="text" class="form-control input-lg" id="nro_contacto" name="nro_contacto" placeholder="Ingresar numero contacto..." maxlength="9" onkeypress="return checkNumeros(event)">
               </div>
             </div>
 
@@ -134,9 +134,9 @@ MODAL AGREGAR SERVICIO TECNICO
             </div>
 
             <div class="col-md-12">
-              <div class="form-group">
+            <div class="form-group">
                 <label>Categoria</label>
-                <input type="text" class="form-control input-lg" id="categoria" name="categoria" placeholder="Ingrese la categoria..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="categoria" name="categoria" placeholder="Ingrese la categoria..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
@@ -151,14 +151,14 @@ MODAL AGREGAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Modelo</label>
-                <input type="text" class="form-control input-lg" id="modelo" name="modelo" placeholder="Ingrese el modelo..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="modelo" name="modelo" placeholder="Ingrese el modelo..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Numero de Serie</label>
-                <input type="number" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." required>
+                <input type="text" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." onkeypress="return checkLetrasNumeros(event)" required>
               </div>
             </div>
             
@@ -183,7 +183,7 @@ MODAL AGREGAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Nombre Tecnico</label>
-                <input type="text" class="form-control input-lg" id="tecnico" name="tecnico" placeholder="Ingrese el nombre del tecnico..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="tecnico" name="tecnico"  placeholder="Ingrese el nombre del tecnico..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
@@ -198,11 +198,11 @@ MODAL AGREGAR SERVICIO TECNICO
             </div>
 
                 
-
+            
                 </div>
 
             </div>
-
+  
         <!--=====================================
         PIE DEL MODAL
         ======================================-->
@@ -261,20 +261,22 @@ MODAL EDITAR SERVICIO TECNICO
               <div class="form-group">
                 <label>Fecha Registro</label>
                 <input type="date" required class="form-control" id="editar_fecha_registro" name="editar_fecha_registro" required>
+                <input type="hidden" id="editarId" name="editarId">
+
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Nombre Cliente</label>
-                <input type="text" class="form-control input-lg" id="editar_nombre_cliente" name="editar_nombre_cliente" onkeyup="this.value=this.value.toUpperCase();" placeholder="Ingresar nombre del cliente..." required>
+                <input type="text" class="form-control input-lg" id="editar_nombre_cliente" name="editar_nombre_cliente" onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" placeholder="Ingresar nombre del cliente..." required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Nro Contacto</label>
-                <input type="number" class="form-control input-lg" id="editar_nro_contacto" name="editar_nro_contacto" placeholder="Ingresar numero contacto...">
+                <input type="text" class="form-control input-lg" id="editar_nro_contacto" name="editar_nro_contacto" onkeypress="return checkNumeros(event)" placeholder="Ingresar numero contacto...">
               </div>
             </div>
 
@@ -288,7 +290,7 @@ MODAL EDITAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Categoria</label>
-                <input type="text" class="form-control input-lg" id="editar_categoria" name="editar_categoria" placeholder="Ingrese la categoria..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="editar_categoria" name="editar_categoria" placeholder="Ingrese la categoria..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
@@ -296,21 +298,21 @@ MODAL EDITAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Marca</label>
-                <input type="text" class="form-control input-lg" id="editar_marca" name="editar_marca" placeholder="Ingrese la marca..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="editar_marca" name="editar_marca" placeholder="Ingrese la marca..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Modelo</label>
-                <input type="text" class="form-control input-lg" id="editar_modelo" name="editar_modelo" placeholder="Ingrese el modelo..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="editar_modelo" name="editar_modelo" placeholder="Ingrese el modelo..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Numero de Serie</label>
-                <input type="number" class="form-control input-lg" id="editar_nro_serie" name="editar_nro_serie" placeholder="Ingrese el numero de serie..." required>
+                <input type="number" class="form-control input-lg" id="editar_nro_serie" name="editar_nro_serie" onkeypress="return checkLetrasNumeros(event)" placeholder="Ingrese el numero de serie..." required>
               </div>
             </div>
             
@@ -329,13 +331,10 @@ MODAL EDITAR SERVICIO TECNICO
               </div>
             </div>
             
-          
-
-            
             <div class="col-md-12">
               <div class="form-group">
                 <label>Nombre Tecnico</label>
-                <input type="text" class="form-control input-lg" id="editar_tecnico" name="editar_tecnico" placeholder="Ingrese el nombre del tecnico..." onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="editar_tecnico" name="editar_tecnico" onkeypress="return checkLetras(event)" placeholder="Ingrese el nombre del tecnico..." onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 

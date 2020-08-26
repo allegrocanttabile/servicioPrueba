@@ -55,7 +55,7 @@
 
 		}
 
-		if($_SESSION["perfil"] == "administradorEspecial" || $_SESSION["perfil"] == "Administrador"){
+		if($_SESSION["perfil"] == "administradorEspecial" || $_SESSION["perfil"] == "Administrador" || $_SESSION["perfil"] == "Tecnico"){
 
 			echo '<li>
 			<a href="serviciosTecnicos">

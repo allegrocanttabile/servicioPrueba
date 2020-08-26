@@ -360,18 +360,14 @@ MODAL EDITAR USUARIO
                 <select class="form-control input-lg" name="editarPerfil">
                   
                   <option value="" id="editarPerfil"></option>
-
                   <option value="Administrador">administradorEspecial</option>
-
                   <option value="Administrador2">Administrador</option>
-
                   <option value="Especial">vendedorEspecial</option>
-
                   <option value="Vendedor">Vendedor</option>
-                  
                   <option value="Cliente1">Cliente1</option>
-
                   <option value="Cliente2">Cliente2</option>
+                  <option value="Tecnico">Tecnico</option>
+
 
                 </select>
 

@@ -70,7 +70,7 @@ class TablaServiciosTecnicos{
 
   			if(isset($_GET["perfilOculto"]) && $_GET["perfilOculto"] == "Tecnico"){
 
-  				$botones =  "<div class='btn-group'><button class='btn btn-warning '  data-toggle='modal' data-target=''><i class='fa fa-pencil'></i></button></div>"; 
+				$botones =  "<div class='btn-group'><button class='btn btn-warning btnEditarServicioTecnico' idServicioTecnico='".$serviciosTecnicos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarServicioTecnico'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarServicioTecnico' idServicioTecnico='".$serviciosTecnicos[$i]["id"]."'codigo='".$serviciosTecnicos[$i]["codigo"]."'><i class='fa fa-times'></i></button><button class='btn btn-info btnImprimirServicioTecnico' codigoServicio='".$serviciosTecnicos[$i]["codigo"]."'><i class='fa fa-print'></i></button></div>";
 
   			}else{
 
