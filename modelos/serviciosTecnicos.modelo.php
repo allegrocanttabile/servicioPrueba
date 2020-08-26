@@ -82,6 +82,7 @@ class ModeloServiciosTecnicos{
 
 		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET fecha_registro = :fecha_registro, nombre_cliente = :nombre_cliente, nro_contacto = :nro_contacto, email = :email, categoria = :categoria, marca = :marca, modelo = :modelo, nro_serie = :nro_serie, reporte = :reporte, obs = :obs, tecnico = :tecnico, estado = :estado WHERE id = :id");
 
+		$stmt->bindParam(":id", $datos["id"], PDO::PARAM_STR);
 		$stmt->bindParam(":fecha_registro", $datos["fecha_registro"], PDO::PARAM_STR);
 		$stmt->bindParam(":nombre_cliente", $datos["nombre_cliente"], PDO::PARAM_STR);
 		$stmt->bindParam(":nro_contacto", $datos["nro_contacto"], PDO::PARAM_STR);

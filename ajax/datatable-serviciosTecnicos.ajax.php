@@ -94,10 +94,7 @@ class TablaServiciosTecnicos{
 			      "'.$serviciosTecnicos[$i]["reporte"].'",
 			      "'.$serviciosTecnicos[$i]["obs"].'",
 				  "'.$serviciosTecnicos[$i]["tecnico"].'",
-				
 				  "'.$estado.'",	
-
-				  
 			      "'.$botones.'"
 			    ],';
 

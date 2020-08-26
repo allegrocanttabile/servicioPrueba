@@ -97,27 +97,28 @@ class ControladorServiciosTecnicos{
 
 	static public function ctrEditarServicioTecnico(){
 
-		if(isset($_POST["nombre_cliente"])){
+		if(isset($_POST["editar_nombre_cliente"])){
 			
 			if(
-				preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ: ]+$/', $_POST["nombre_cliente"])){
+				preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ: ]+$/', $_POST["editar_nombre_cliente"])){
 
 		   					   	
 
 				$tabla = "garantias";
 
-				$datos = array("fecha_registro" => $_POST["fecha_registro"],
-								"nombre_cliente" => $_POST["nombre_cliente"],
-								"nro_contacto" => $_POST["nro_contacto"],
-								"email" => $_POST["email"],
-							   "categoria" => $_POST["categoria"],
-							   "marca" => $_POST["marca"],
-							   "modelo" => $_POST["modelo"],
-							   "nro_serie" => $_POST["nro_serie"],
-							   "reporte" => $_POST["reporte"],
-							   "obs" => $_POST["obs"],
-							   "tecnico" => $_POST["tecnico"],
-				 			   "estado" => $_POST["estado"]);
+				$datos = array("fecha_registro" => $_POST["editar_fecha_registro"],
+									"id" => $_POST["editarId"],
+								"nombre_cliente" => $_POST["editar_nombre_cliente"],
+								"nro_contacto" => $_POST["editar_nro_contacto"],
+								"email" => $_POST["editar_email"],
+							   "categoria" => $_POST["editar_categoria"],
+							   "marca" => $_POST["editar_marca"],
+							   "modelo" => $_POST["editar_modelo"],
+							   "nro_serie" => $_POST["editar_nro_serie"],
+							   "reporte" => $_POST["editar_reporte"],
+							   "obs" => $_POST["editar_obs"],
+							   "tecnico" => $_POST["editar_tecnico"],
+				 			   "estado" => $_POST["editar_estado"]);
 
 
 				$respuesta = ModeloServiciosTecnicos::mdlEditarServicioTecnico($tabla, $datos);

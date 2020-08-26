@@ -119,231 +119,82 @@ MODAL AGREGAR SERVICIO TECNICO
               </div>
             </div>
 
-            
-          
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Nro Contacto</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Nro Contacto</label>
                 <input type="number" class="form-control input-lg" id="nro_contacto" name="nro_contacto" placeholder="Ingresar numero contacto...">
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Email</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Email</label>
                 <input type="text" class="form-control input-lg" id="email" name="email" placeholder="example@example.com">
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Categoria</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Categoria</label>
                 <input type="text" class="form-control input-lg" id="categoria" name="categoria" placeholder="Ingrese la categoria..." onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Marca</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Marca</label>
                 <input type="text" class="form-control input-lg" id="marca" name="marca" placeholder="Ingrese la marca..." onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Modelo</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Modelo</label>
                 <input type="text" class="form-control input-lg" id="modelo" name="modelo" placeholder="Ingrese el modelo..." onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Numero de Serie</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Numero de Serie</label>
                 <input type="number" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
             </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Reporte</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <textarea id="reporte" name="reporte" rows="3"></textarea>
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Reporte</label>
+                <textarea class="form-control" id="reporte" name="reporte" rows="3"></textarea>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Obs.</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <textarea id="obs" name="obs" rows="3"></textarea>
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Obs.</label>
+                <textarea class="form-control" id="obs" name="obs" rows="3"></textarea>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
             </div>
-            </div>
+            
+          
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Nombre Tecnico</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Nombre Tecnico</label>
                 <input type="text" class="form-control input-lg" id="tecnico" name="tecnico" placeholder="Ingrese el nombre del tecnico..." onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Estado</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <div class="input-group">
-                    <select class="form-control" id="estado" name="estado" required>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Estado</label>
+                <select class="form-control" id="estado" name="estado" required>
                       <option>Abierto</option>
                       <option>Cerrado</option>
-                    </select>              
-                </div>
+                </select> 
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
                 
@@ -406,280 +257,97 @@ MODAL EDITAR SERVICIO TECNICO
           <div class="box-body">
 
             
-
-
-          <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Fecha Registro</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                <input type="date" required class="form-control" id="fecha_registro" name="fecha_registro"  value="<?php echo date("Y-m-d");?>" required>
+          <div class="col-md-12">
+              <div class="form-group">
+                <label>Fecha Registro</label>
+                <input type="date" required class="form-control" id="editar_fecha_registro" name="editar_fecha_registro" required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
             </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Nombre Cliente</label>
+                <input type="text" class="form-control input-lg" id="editar_nombre_cliente" name="editar_nombre_cliente" onkeyup="this.value=this.value.toUpperCase();" placeholder="Ingresar nombre del cliente..." required>
+              </div>
             </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Nro Contacto</label>
+                <input type="number" class="form-control input-lg" id="editar_nro_contacto" name="editar_nro_contacto" placeholder="Ingresar numero contacto...">
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control input-lg" id="editar_email" name="editar_email" placeholder="example@example.com">
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Categoria</label>
+                <input type="text" class="form-control input-lg" id="editar_categoria" name="editar_categoria" placeholder="Ingrese la categoria..." onkeyup="this.value=this.value.toUpperCase();" required>
+              </div>
+            </div>
+
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Marca</label>
+                <input type="text" class="form-control input-lg" id="editar_marca" name="editar_marca" placeholder="Ingrese la marca..." onkeyup="this.value=this.value.toUpperCase();" required>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Modelo</label>
+                <input type="text" class="form-control input-lg" id="editar_modelo" name="editar_modelo" placeholder="Ingrese el modelo..." onkeyup="this.value=this.value.toUpperCase();" required>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Numero de Serie</label>
+                <input type="number" class="form-control input-lg" id="editar_nro_serie" name="editar_nro_serie" placeholder="Ingrese el numero de serie..." required>
+              </div>
+            </div>
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Reporte</label>
+                <textarea class="form-control" id="editar_reporte" name="editar_reporte" rows="3"></textarea>
+              </div>
+            </div>
+
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Obs.</label>
+                <textarea class="form-control" id="editar_obs" name="editar_obs" rows="3"></textarea>
+              </div>
+            </div>
+            
           
-             <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Nombre Cliente</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="text" class="form-control input-lg" id="nombre_cliente" name="nombre_cliente" onkeyup="this.value=this.value.toUpperCase();" placeholder="Ingresar nombre del cliente..." required>
+
+            
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Nombre Tecnico</label>
+                <input type="text" class="form-control input-lg" id="editar_tecnico" name="editar_tecnico" placeholder="Ingrese el nombre del tecnico..." onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-          
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Nro Contacto</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="number" class="form-control input-lg" id="nro_contacto" name="nro_contacto" placeholder="Ingresar numero contacto...">
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
             </div>
 
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Email</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="text" class="form-control input-lg" id="email" name="email" placeholder="example@example.com">
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Categoria</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="text" class="form-control input-lg" id="categoria" name="categoria" placeholder="Ingrese la categoria..." onkeyup="this.value=this.value.toUpperCase();" required>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Marca</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="text" class="form-control input-lg" id="marca" name="marca" placeholder="Ingrese la marca..." onkeyup="this.value=this.value.toUpperCase();" required>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Modelo</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="text" class="form-control input-lg" id="modelo" name="modelo" placeholder="Ingrese el modelo..." onkeyup="this.value=this.value.toUpperCase();" required>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Numero de Serie</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="number" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." required>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Reporte</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <textarea id="reporte" name="reporte" rows="3"></textarea>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Obs.</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <textarea id="obs" name="obs" rows="3"></textarea>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Nombre Tecnico</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
-                <input type="text" class="form-control input-lg" id="tecnico" name="tecnico" placeholder="Ingrese el nombre del tecnico..." onkeyup="this.value=this.value.toUpperCase();" required>
-              </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </div>
-            </div>
-
-
-            <div class="row">
-            <div class="col-xs-12">
-            <table class="table">
-               <thead>
-                <tr>
-                <th>Estado</th>
-                </tr>
-               </thead>
-            <tbody>
-              <tr>
-            <td style="width: 33%">
-              <div class="input-group">
-                <div class="input-group">
-                    <select class="form-control" id="estado" name="estado" required>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Estado</label>
+                <select class="form-control" id="editar_estado" name="editar_estado" required>
                       <option>Abierto</option>
                       <option>Cerrado</option>
-                    </select>              
-                </div>
+                </select> 
               </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
             </div>
-            </div>
-
-
-
-                      
           </div>
 
         </div>

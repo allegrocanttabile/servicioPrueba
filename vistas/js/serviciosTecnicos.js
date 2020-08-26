@@ -76,17 +76,18 @@ $(".tablaServiciosTecnicos tbody").on("click", "button.btnEditarServicioTecnico"
       success:function(respuesta){
 
            $("#editarId").val(respuesta["id"]);
-           $("#fecha_registro").val(respuesta["fecha_registro"]);
-           $("#nombre_cliente").val(respuesta["nombre_cliente"]);
-           $("#nro_contacto").val(respuesta["nro_contacto"]);
-           $("#email").val(respuesta["email"]);
-           $("#categoria").val(respuesta["categoria"]);
-           $("#marca").val(respuesta["marca"]);
-           $("#modelo").val(respuesta["modelo"]);
-           $("#nro_serie").val(respuesta["nro_serie"]);
-           $("#obs").val(respuesta["obs"]);
-           $("#tecnico").val(respuesta["tecnico"]);
-           $("#estado").val(respuesta["estado"]);
+           $("#editar_fecha_registro").val(respuesta["fecha_registro"]);
+           $("#editar_nombre_cliente").val(respuesta["nombre_cliente"]);
+           $("#editar_nro_contacto").val(respuesta["nro_contacto"]);
+           $("#editar_email").val(respuesta["email"]);
+           $("#editar_categoria").val(respuesta["categoria"]);
+           $("#editar_marca").val(respuesta["marca"]);
+           $("#editar_modelo").val(respuesta["modelo"]);
+           $("#editar_nro_serie").val(respuesta["nro_serie"]);
+           $("#editar_reporte").val(respuesta["reporte"]);
+           $("#editar_obs").val(respuesta["obs"]);
+           $("#editar_tecnico").val(respuesta["tecnico"]);
+           $("#editar_estado").val(respuesta["estado"]);
            
         }
 
