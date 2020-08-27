@@ -49,7 +49,7 @@
            <th>Marca</th>
            <th>Modelo</th>
            <th>Nro Serie</th>           
-           <th>Reporte</th>
+           <th>Desperfecto</th>
            <th>Observaciones</th>
            <th>Tecnico</th>
            <th>Estado</th>
@@ -151,21 +151,21 @@ MODAL AGREGAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Modelo</label>
-                <input type="text" class="form-control input-lg" id="modelo" name="modelo" placeholder="Ingrese el modelo..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="modelo" name="modelo" placeholder="Ingrese el modelo..." onkeypress="return checkEspecial(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Numero de Serie</label>
-                <input type="text" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." onkeypress="return checkLetrasNumeros(event)" required>
+                <input type="text" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." onkeypress="return checkLetrasNumeros(event)">
               </div>
             </div>
             
             <div class="col-md-12">
               <div class="form-group">
-                <label>Reporte</label>
-                <textarea class="form-control" id="reporte" name="reporte" rows="3"></textarea>
+                <label>Desperfecto</label>
+                <textarea class="form-control" id="reporte" name="reporte" rows="2"></textarea>
               </div>
             </div>
 
@@ -305,21 +305,21 @@ MODAL EDITAR SERVICIO TECNICO
             <div class="col-md-12">
               <div class="form-group">
                 <label>Modelo</label>
-                <input type="text" class="form-control input-lg" id="editar_modelo" name="editar_modelo" placeholder="Ingrese el modelo..." onkeypress="return checkLetras(event)" onkeyup="this.value=this.value.toUpperCase();" required>
+                <input type="text" class="form-control input-lg" id="editar_modelo" name="editar_modelo" placeholder="Ingrese el modelo..." onkeypress="return checkEspecial(event)" onkeyup="this.value=this.value.toUpperCase();" required>
               </div>
             </div>
 
             <div class="col-md-12">
               <div class="form-group">
                 <label>Numero de Serie</label>
-                <input type="number" class="form-control input-lg" id="editar_nro_serie" name="editar_nro_serie" onkeypress="return checkLetrasNumeros(event)" placeholder="Ingrese el numero de serie..." required>
+                <input type="text" class="form-control input-lg" id="editar_nro_serie" name="editar_nro_serie" onkeypress="return checkLetrasNumeros(event)" placeholder="Ingrese el numero de serie..." required>
               </div>
             </div>
             
             <div class="col-md-12">
               <div class="form-group">
-                <label>Reporte</label>
-                <textarea class="form-control" id="editar_reporte" name="editar_reporte" rows="3"></textarea>
+                <label>Desperfecto</label>
+                <textarea class="form-control" id="editar_reporte" name="editar_reporte" rows="2"></textarea>
               </div>
             </div>
 
