@@ -1,16 +1,8 @@
 <?php
 
-require_once "../../../controladores/ventas.controlador.php";
-require_once "../../../modelos/ventas.modelo.php";
 
-require_once "../../../controladores/clientes.controlador.php";
-require_once "../../../modelos/clientes.modelo.php";
-
-require_once "../../../controladores/usuarios.controlador.php";
-require_once "../../../modelos/usuarios.modelo.php";
-
-require_once "../../../controladores/productos.controlador.php";
-require_once "../../../modelos/productos.modelo.php";
+require_once "../../../controladores/serviciosTecnicos.controlador.php";
+require_once "../../../modelos/serviciosTecnicos.modelo.php";
 
 class imprimirFactura{
 
@@ -26,25 +18,16 @@ $valorVenta = $this->codigo;
 $respuestaVenta = ControladorVentas::ctrMostrarVentas($itemVenta, $valorVenta);
 
 $fechapdf = date("d/m/y",time());
-//$fechapdf = substr($respuestaVenta["fechapdf"],0,-8);
-$productos = json_decode($respuestaVenta["productos"], true);
-$neto = number_format($respuestaVenta["neto"],2);
-$impuesto = number_format($respuestaVenta["impuesto"],2);
-$total = number_format($respuestaVenta["total"],2);
+// //$fechapdf = substr($respuestaVenta["fechapdf"],0,-8);
+// $productos = json_decode($respuestaVenta["productos"], true);
+// $neto = number_format($respuestaVenta["neto"],2);
+// $impuesto = number_format($respuestaVenta["impuesto"],2);
+// $total = number_format($respuestaVenta["total"],2);
 
 //TRAEMOS LA INFORMACIÓN DEL CLIENTE
 
 $itemCliente = "id";
-$valorCliente = $respuestaVenta["id_cliente"];
-
-$respuestaCliente = ControladorClientes::ctrMostrarClientes($itemCliente, $valorCliente);
-
-//TRAEMOS LA INFORMACIÓN DEL VENDEDOR
-
-$itemVendedor = "id";
-$valorVendedor = $respuestaVenta["id_vendedor"];
-
-$respuestaVendedor = ControladorUsuarios::ctrMostrarUsuarios($itemVendedor, $valorVendedor);
+$respuestaServicio = ControladorServiciosTecnicos::ctrMostrarServiciosTecnicos($itemCliente);
 
 //REQUERIMOS LA CLASE TCPDF
 

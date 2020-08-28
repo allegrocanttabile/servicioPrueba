@@ -18,16 +18,11 @@ public function traerImpresionServicioTecnico(){
 
 $itemServicio = "id";
 $valorServicio = $this->id;
-$respuestaServicio = ControladorServiciosTecnicos::ctrMostrarServiciosTecnicos($item, $valor);
+$respuestaServicio = ControladorServiciosTecnicos::ctrMostrarServiciosTecnicos($itemServicio, $valorServicio);
 
 $fechapdf = date("d/m/y",time());
 
 
-//TRAEMOS LA INFORMACIÓN DEL CLIENTE
-
-$itemCliente = "id";
-$valorCliente = $respuestaServicio["id_cliente"];
-$respuestaCliente = ControladorClientes::ctrMostrarClientes($itemCliente, $valorCliente);
 
 //REQUERIMOS LA CLASE TCPDF
 
@@ -81,7 +76,7 @@ $bloque1 = <<<EOF
 				
 			</td>
 
-			<td style="background-color:white; width:110px; text-align:center; color:red"><br><br>DOCUMENTO SERVICIO N°<br>$valorVenta</td>
+			<td style="background-color:white; width:110px; text-align:center; color:red"><br><br>DOCUMENTO SERVICIO N°<br></td>
 
 		</tr>
 
@@ -116,7 +111,7 @@ $bloque2 = <<<EOF
 		
 			<td style="border: 1px solid #666; background-color:white; width:390px">
 
-				Cliente: $respuestaCliente[nombre]
+				Cliente: $respuestaServicio[nombre]
 
 			</td>
 

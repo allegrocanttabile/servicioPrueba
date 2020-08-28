@@ -4,7 +4,7 @@ class Conexion{
 
 	static public function conectar(){
 
-		$link = new PDO("mysql:host=localhost;dbname=dbtecnico",
+		$link = new PDO("mysql:host=localhost;dbname=wienerst_tecnico",
 			            "root",
 			            "");
 
