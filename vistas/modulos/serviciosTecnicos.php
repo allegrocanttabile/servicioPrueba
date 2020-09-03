@@ -15,6 +15,10 @@
       <li class="active">Administrar Servicio Tecnico</li>
     
     </ol>
+
+    <form method="post" action="./export_servicioTecnico.php">
+     <input type="submit" name="export" class="btn btn-success" value="Exportar Todo Excel" />
+    </form>
     
   </section>
 
@@ -49,6 +53,7 @@
            <th>Marca</th>
            <th>Modelo</th>
            <th>Nro Serie</th>           
+           <th>Cantidad</th>           
            <th>Desperfecto</th>
            <th>Observaciones</th>
            <th>Tecnico</th>
@@ -159,6 +164,13 @@ MODAL AGREGAR SERVICIO TECNICO
               <div class="form-group">
                 <label>Numero de Serie</label>
                 <input type="text" class="form-control input-lg" id="nro_serie" name="nro_serie" placeholder="Ingrese el numero de serie..." onkeypress="return checkLetrasNumeros(event)">
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Cantidad</label>
+                <input type="text" class="form-control input-lg" id="cantidad" name="cantidad" value="1"onkeypress="return checkNumeros(event)" required>
               </div>
             </div>
             
@@ -313,6 +325,13 @@ MODAL EDITAR SERVICIO TECNICO
               <div class="form-group">
                 <label>Numero de Serie</label>
                 <input type="text" class="form-control input-lg" id="editar_nro_serie" name="editar_nro_serie" onkeypress="return checkLetrasNumeros(event)" placeholder="Ingrese el numero de serie..." required>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Cantidad</label>
+                <input type="text" class="form-control input-lg" id="editar_cantidad" name="editar_cantidad" value="1"onkeypress="return checkNumeros(event)" required>
               </div>
             </div>
             

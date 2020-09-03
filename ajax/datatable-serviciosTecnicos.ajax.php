@@ -91,6 +91,7 @@ class TablaServiciosTecnicos{
 			      "'.$serviciosTecnicos[$i]["marca"].'",
 			      "'.$serviciosTecnicos[$i]["modelo"].'",
 			      "'.$serviciosTecnicos[$i]["nro_serie"].'",
+			      "'.$serviciosTecnicos[$i]["cantidad"].'",
 			      "'.$serviciosTecnicos[$i]["reporte"].'",
 			      "'.$serviciosTecnicos[$i]["obs"].'",
 				  "'.$serviciosTecnicos[$i]["tecnico"].'",

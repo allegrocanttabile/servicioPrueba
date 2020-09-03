@@ -41,8 +41,8 @@ class ModeloServiciosTecnicos{
 	=============================================*/
 	static public function mdlIngresarServicioTecnico($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(fecha_registro, nombre_cliente, nro_contacto, email, categoria, marca, modelo, nro_serie, reporte, obs, tecnico, estado) 
-		VALUES (:fecha_registro, :nombre_cliente, :nro_contacto, :email, :categoria, :marca, :modelo, :nro_serie, :reporte, :obs, :tecnico, :estado)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(fecha_registro, nombre_cliente, nro_contacto, email, categoria, marca, modelo, nro_serie, cantidad, reporte, obs, tecnico, estado) 
+		VALUES (:fecha_registro, :nombre_cliente, :nro_contacto, :email, :categoria, :marca, :modelo, :nro_serie, :cantidad, :reporte, :obs, :tecnico, :estado)");
 
 		
 		$stmt->bindParam(":fecha_registro", $datos["fecha_registro"], PDO::PARAM_STR);
@@ -53,6 +53,7 @@ class ModeloServiciosTecnicos{
 		$stmt->bindParam(":marca", $datos["marca"], PDO::PARAM_STR);
 		$stmt->bindParam(":modelo", $datos["modelo"], PDO::PARAM_STR);
 		$stmt->bindParam(":nro_serie", $datos["nro_serie"], PDO::PARAM_STR);
+		$stmt->bindParam(":cantidad", $datos["cantidad"], PDO::PARAM_STR);
 		$stmt->bindParam(":reporte", $datos["reporte"], PDO::PARAM_STR);
 		$stmt->bindParam(":obs", $datos["obs"], PDO::PARAM_STR);
 		$stmt->bindParam(":tecnico", $datos["tecnico"], PDO::PARAM_STR);
@@ -80,7 +81,7 @@ class ModeloServiciosTecnicos{
 	=============================================*/
 	static public function mdlEditarServicioTecnico($tabla, $datos){
 
-		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET fecha_registro = :fecha_registro, nombre_cliente = :nombre_cliente, nro_contacto = :nro_contacto, email = :email, categoria = :categoria, marca = :marca, modelo = :modelo, nro_serie = :nro_serie, reporte = :reporte, obs = :obs, tecnico = :tecnico, estado = :estado WHERE id = :id");
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET fecha_registro = :fecha_registro, nombre_cliente = :nombre_cliente, nro_contacto = :nro_contacto, email = :email, categoria = :categoria, marca = :marca, modelo = :modelo, nro_serie = :nro_serie, cantidad = :cantidad, reporte = :reporte, obs = :obs, tecnico = :tecnico, estado = :estado WHERE id = :id");
 
 		$stmt->bindParam(":id", $datos["id"], PDO::PARAM_STR);
 		$stmt->bindParam(":fecha_registro", $datos["fecha_registro"], PDO::PARAM_STR);
@@ -91,6 +92,7 @@ class ModeloServiciosTecnicos{
 		$stmt->bindParam(":marca", $datos["marca"], PDO::PARAM_STR);
 		$stmt->bindParam(":modelo", $datos["modelo"], PDO::PARAM_STR);
 		$stmt->bindParam(":nro_serie", $datos["nro_serie"], PDO::PARAM_STR);
+		$stmt->bindParam(":cantidad", $datos["cantidad"], PDO::PARAM_STR);
 		$stmt->bindParam(":reporte", $datos["reporte"], PDO::PARAM_STR);
 		$stmt->bindParam(":obs", $datos["obs"], PDO::PARAM_STR);
 		$stmt->bindParam(":tecnico", $datos["tecnico"], PDO::PARAM_STR);

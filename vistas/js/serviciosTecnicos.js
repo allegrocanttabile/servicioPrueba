@@ -22,7 +22,7 @@ $('.tablaServiciosTecnicos').DataTable( {
     "deferRender": true,
 	"retrieve": true,
 	"processing": true,
-  "order": [[ 13, "desc" ]],
+  "order": [[ 14, "desc" ]],
 	 "language": {
 
 			"sProcessing":     "Procesando...",
@@ -84,6 +84,7 @@ $(".tablaServiciosTecnicos tbody").on("click", "button.btnEditarServicioTecnico"
            $("#editar_marca").val(respuesta["marca"]);
            $("#editar_modelo").val(respuesta["modelo"]);
            $("#editar_nro_serie").val(respuesta["nro_serie"]);
+           $("#editar_cantidad").val(respuesta["cantidad"]);
            $("#editar_reporte").val(respuesta["reporte"]);
            $("#editar_obs").val(respuesta["obs"]);
            $("#editar_tecnico").val(respuesta["tecnico"]);
